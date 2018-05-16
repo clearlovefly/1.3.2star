@@ -1,0 +1,238 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend, input, textarea, button, p, blockquote, th, td
+{margin: 0;padding: 0;}
+li{ list-style: none;}
+a{text-decoration: none;}
+/************************导航样式开始*****************************/
+.nav{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 999;
+}
+.nav>img{
+    height: 50px;
+    float: left;
+}
+.nav_ul{
+    float: right;
+}
+.nav_ul>li{
+    float: left;
+    width: 190px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    opacity: .8;
+}
+.nav_ul button{
+    width: 105px;
+    height: 28px;
+    border: 2px solid #fff;
+    border-radius: 19px;
+    opacity: .9;
+    color: #fff;
+    transition: all .2s linear;
+    background-color:transparent;
+}
+.nav_ul button:hover{
+    background-color: #fff;
+    color: #3bb2ea;
+    opacity: .8;
+}
+/*导航样式结束*/
+/***************************共同样式开始**************************************/
+.box1,.box2{
+    width: 100%;
+    height: 665px;
+    position: relative;
+}
+/*****************************共同样式结束*****************************************/
+/********************************第一块开始*************************************/
+.box1>.wanwu{
+    width: 600px;
+    height: 130px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -65px;
+    text-align: center;
+}
+.wanwu>img{
+    width: 100%;
+}
+.wanwu>a{
+    border: 2px solid #fff;
+    padding: 10px 66px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+    transition: all .2s;
+}
+.wanwu>a:hover{
+    background-color: #fff;
+    color: #3bb2ea;
+    opacity: .8;
+}
+/*第一块结束*/
+/******************************************第二块开始***********************************/
+.box2{
+    background-image: url("../images/bg1.png");
+    background-size: 100%;
+}
+/*背景图片缩放动画*/
+@-webkit-keyframes anima {
+    0%{
+        background-size: 100%;
+    }
+    50%{
+        background-size: 110%;
+    }
+    100%{
+        background-size: 100%;
+    }
+ }
+.box2:hover{
+    -webkit-animation: anima 1s linear;
+}
+.meili{
+    width: 480px;
+    height: 135px;
+    position: absolute;
+    top: 50%;
+    right: 100px;
+}
+.meili>img{
+    width: 100%;
+}
+/*第二块结束*/
+/*第三块开始*/
+.box33{
+    background-image: url("../images/bg2.png");
+}
+/*第三块结束*/
+/*第四块开始*/
+.box44{
+    background-image: url("../images/bg3.png");
+}
+.canyu{
+    width: 480px;
+    height: 135px;
+    position: relative;
+    left: 90px;
+    top: 300px;
+}
+.canyu>img{
+    width: 100%;
+}
+/*第四块结束*/
+/*最后一页样式开始*/
+.help{
+    position: relative;
+    width: 100%;
+    height: 665px;
+    overflow: hidden;
+}
+.h-left,.h-right{
+    width: 50%;
+    height: 800px;
+    float: left;
+    overflow: hidden;
+}
+.h-left{
+    background-color: #d4dce4;
+}
+.h-right{
+    background-color: #48a4ee;
+}
+.help-link{
+    width: 90%;
+    padding-top: 200px;
+    margin: 0 auto;
+}
+.link-box{
+    float: left;
+    width: 30%;
+    padding-left: 15px;
+    border-left: 3px solid #aab3cb;
+}
+.link-box p{
+    color: #717d98;
+    font-size: 16px;
+}
+.link-box ul li{
+    font-size: 14px;
+    line-height: 26px;
+}
+.link-box ul li a{
+    color: #aab3cb;
+}
+.r-container{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+.r-container>ul{
+    border-bottom:1px solid #d4dce4 ;
+    border-top: 1px solid #d4dce4;
+    overflow: hidden;
+}
+.r-container>p{
+    font-size: 18px;
+    color: #fff;
+    padding-bottom: 10px;
+}
+.num{
+    width: 100%;
+    margin: -50px 0 -120px 0;
+}
+.r-container li p{
+    margin: 10px 0 16px;
+    font-weight: bold;
+    color: #fffefe;
+    font-size: 14px;
+}
+.r-container .text{
+    color: #eee;
+    line-height: 28px;
+    font-size: 14px;
+}
+.line{
+    float: left;
+    margin-left: 45px;
+    padding-bottom: 20px;
+}
+.promptly{
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 66px;
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+    left: 55px;
+}
+.promptly:hover{
+    color: #4ac9ff;
+    background-color: #fff;
+}
+/*最后一页样式结束*/
+/*********************************锚点样式开始***********************/
+.maodian{
+    position: fixed;
+    right: 20px;
+    top: 280px;
+}
+.maodian a{
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #3bb2ea;
+    border: 1px solid #fff;
+    margin-bottom: 30px;
+}
+/*锚点样式结束*/
